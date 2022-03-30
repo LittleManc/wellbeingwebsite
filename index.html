@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellbeing Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/wellbeingwebsitelogo.png" />
+</head>
+<body>
+
+    <navbar>
+       <!-- <img class="main-logo" src="images/wellbeingwebsitelogo.png" alt="wellness website logo"> -->
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#">Mental Health</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Physical Health</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Emotional Health</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">About Us</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a href="#">Contact Us</a>
+            </li> -->
+        </ul>
+    </navbar>
+
+    <!-- <nav>
+<a class="navbar-item" href="#">About Us</a>
+<a class="navbar-item" href="#">Mental Wellbeing</a>
+<a class="navbar-item" href="#">Physical Wellbeing</a>
+<a class="navbar-item" href="#">Emotional Wellbeing</a> -->
+
+<!-- <ul>
+    <li> <a href="#">About Us</a> </li>    
+    <li> <a href="#">Mental Wellbeing</a> </li>
+        <li> <a href="#">Physical Wellbeing</a> </li>
+        <li> <a href="#">Emotional Wellbeing</a> </li> -->
+       
+            <!-- <li>About Us</li>
+            <li>Mental Wellbeing</li>
+            <li>Physical Wellbeing</li>
+            <li>Emotional Wellbeing</li> -->
+        <!-- </ul> -->
+    <!-- </nav> -->
+    <div class="main-section">     
+    <h1>How to take better care of yourself - mind 🧠 body 🙍‍♀️ & soul ❤️</h1>
+</div>
+
+    <div class="first-section">
+        <img id="main-image"
+            src="images/wellbeingmainimage.jpg"
+            alt="A woman taking journalling by an open window">
+            <para> <ul> <li>Wellbeing is holistic - we must look after all the aspects of our lives if we wish to increase our wellbeing.</li>
+            <br><li>Enhancing your wellbeing isn't always easy, but it is always worth it.</li>
+            <br><li>Eating a healthy balanced diet, getting enough sleep and exercise, and creating healthy habits to look after your
+            mental, physical and emotional health are some of the easiest ways to help develop your sense of wellbeing - although, this is often easier
+            said than done!</li></ul> </para>
+    </div>
+
+
+    <!-- // EMBEDDED VIDEO ON THE WIREFRAME HERE BUT TOO COMPLEX TO DO THIS -->
+
+
+    <br><para class="click-below">Click on an image below for more information about different types of wellbeing!</para>
+
+    <br><div>
+<a href="#" class="click-image"> <img src="https://images.pexels.com/photos/3851309/pexels-photo-3851309.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Mental Wellbeing Image"> </a>
+<a href="#" class="click-image"> <img src="https://images.pexels.com/photos/4498510/pexels-photo-4498510.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Physical Wellbeing Image"> </a>
+<a href="#" class="click-image"> <img src="https://images.pexels.com/photos/2821823/pexels-photo-2821823.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Emotional Wellbeing Image"> </a>
+</div>
+
+
+</body>
+
+<footer>
+
+    <p>Please do get in touch with us, we would love to hear from you!</p>
+    <form action="//submit.form" id="ContactUs" method="post" onsubmit="return ValidateForm(this);">
+        <script type="text/javascript">
+            function ValidateForm(frm) {
+                if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                return true;
+            }
+        </script>
+        <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+            <tr>
+                <td>
+                    <label for="Name">Name*:</label>
+                </td>
+                <td>
+                    <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" placeholder="Type your name here"/>
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>
+                    <label for="PhoneNumber">Phone number:</label>
+                </td>
+                <td>
+                    <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+                </td>
+            </tr> -->
+            <tr>
+                <td>
+                    <label for="FromEmailAddress">Email address*:</label>
+                </td>
+                <td>
+                    <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" placeholder="Type your email address here" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Message">Message*:</label>
+                </td>
+                <td>
+                    <textarea name="Message" rows="7" cols="40" style="width:100%;max-width:350px;" placeholder="Please add your message here"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    * - required fields
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+<footer>
+    <h3 id="follow-socials">Follow Code First Girls!</h3>
+    <ul class="footer-list">
+        <li class="footer-item">
+            <a href="https://twitter.com/CodeFirstGirls"> <img src="png-clipart-twitter-twitter-thumbnail.png"
+                    alt="Twitter logo" height="50" width="50"> </a>
+        </li>
+        <li class="footer-item">
+            <a href="https://www.instagram.com/codefirstgirls/"> <img
+                    src="instagram-social-media-icon-design-template-vector-png_127006.jpeg" alt="Instagram logo"
+                    height="50" width="50"></a>
+        </li>
+        <li class="footer-item">
+            <a href="https://www.facebook.com/codefirstgirls"> <img
+                    src="Blue-facebook-icon-on-transparent-background-PNG.png" alt="Facebook logo" height="50"
+                    width="50"></a>
+        </li>
+    </ul>
+</footer>
+
+</html>
+
+
+
+
+
+
+
